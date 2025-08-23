@@ -1,149 +1,196 @@
 # Better-Comments-Settings
-Minhas configuracoes da extensao do Better Comments do vscode
 
+### 🛠️ **Error Handling & Debugging**
 
-### 🛠️ **Correção de Erros e Depuração**
-- **`# BUG:`** Indica a presença de um erro conhecido no código.  
+* **`# BUG:`** Indicates a known bug in the code.
+
   ```python
-  # BUG: O cálculo do desconto está errado para valores negativos.
+  # BUG: The discount calculation is incorrect for negative values.
   ```
-  🔹 **Usado para marcar partes do código que precisam de correção urgente.**  
 
-- **`# FIXME:`** Algo que precisa ser corrigido, mas ainda não foi feito.  
-  ```python
-  # FIXME: Esta função não verifica entradas inválidas.
-  ```
-  🔹 **Sinaliza algo que está errado e precisa de uma solução.**  
+  🔹 **Used to mark parts of the code that need urgent fixing.**
 
-- **`# HACK:`** Solução improvisada ou temporária que pode não ser ideal.  
-  ```python
-  # HACK: Forçando um delay para evitar um bug de sincronização.
-  ```
-  🔹 **Geralmente indica código que pode ser substituído por algo melhor no futuro.**  
+* **`# FIXME:`** Something that must be corrected but has not yet been fixed.
 
-- **`# DEBUG:`** Usado para marcações de depuração.  
   ```python
-  # DEBUG: Verificar se o valor da variável está correto.
-  print(valor)
+  # FIXME: This function does not check for invalid inputs.
   ```
-  🔹 **Ajuda a rastrear erros e entender o comportamento do código.**  
 
-- **`# TRACE:`** Para registrar pontos críticos no fluxo de execução.  
+  🔹 **Highlights an error that requires a solution.**
+
+* **`# HACK:`** A workaround or temporary solution that may not be ideal.
+
   ```python
-  # TRACE: Esta função é chamada toda vez que o botão é pressionado.
+  # HACK: Forcing a delay to avoid a synchronisation issue.
   ```
-  🔹 **Geralmente usado para monitorar fluxos complexos de código.**  
+
+  🔹 **Usually points to code that should be replaced with a proper solution later.**
+
+* **`# DEBUG:`** Used for debugging notes.
+
+  ```python
+  # DEBUG: Check if the variable value is correct.
+  print(value)
+  ```
+
+  🔹 **Helps track down errors and understand the behaviour of the code.**
+
+* **`# TRACE:`** For logging critical points in the execution flow.
+
+  ```python
+  # TRACE: This function is called every time the button is pressed.
+  ```
+
+  🔹 **Useful for monitoring complex code flows.**
 
 ---
 
-### 🎯 **Melhoria e Organização do Código**
-- **`# TODO:`** Algo que ainda precisa ser feito.  
-  ```python
-  # TODO: Implementar autenticação de usuário.
-  ```
-  🔹 **Lista tarefas pendentes no código.**  
+### 🎯 **Code Improvement & Organisation**
 
-- **`# OPTIMIZE:`** Código que pode ser melhorado para um desempenho superior.  
-  ```python
-  # OPTIMIZE: Melhorar o tempo de execução desta busca.
-  ```
-  🔹 **Indica partes do código que podem ser mais eficientes.**  
+* **`# TODO:`** Something that still needs to be done.
 
-- **`# REFACTOR:`** Código que precisa ser reestruturado para melhor organização.  
   ```python
-  # REFACTOR: Separar esta lógica em uma função auxiliar.
+  # TODO: Implement user authentication.
   ```
-  🔹 **Usado quando o código funciona, mas pode ser escrito de maneira melhor.**  
 
-- **`# CLEANUP:`** Código desnecessário que precisa ser removido.  
-  ```python
-  # CLEANUP: Remover esta variável temporária não utilizada.
-  ```
-  🔹 **Ajuda a manter o código limpo e organizado.**  
+  🔹 **Lists pending tasks within the code.**
 
-- **`# DEPRECATED:`** Código que não deve mais ser usado e pode ser removido no futuro.  
-  ```python
-  # DEPRECATED: Este método será substituído na próxima versão.
-  ```
-  🔹 **Útil para alertar sobre funcionalidades antigas.**  
+* **`# OPTIMISE:`** Code that could be improved for better performance.
 
-- **`# LEGACY:`** Código antigo que ainda é usado, mas pode precisar de revisão.  
   ```python
-  # LEGACY: Mantendo esta função para compatibilidade com versões antigas.
+  # OPTIMISE: Improve the execution time of this search.
   ```
-  🔹 **Ajuda a identificar código que pode precisar ser modernizado.**  
+
+  🔹 **Marks areas that could be made more efficient.**
+
+* **`# REFACTOR:`** Code that should be restructured for better organisation.
+
+  ```python
+  # REFACTOR: Extract this logic into a helper function.
+  ```
+
+  🔹 **Used when the code works but can be written in a cleaner way.**
+
+* **`# CLEANUP:`** Unnecessary code that should be removed.
+
+  ```python
+  # CLEANUP: Remove this unused temporary variable.
+  ```
+
+  🔹 **Keeps the codebase clean and tidy.**
+
+* **`# DEPRECATED:`** Code that should no longer be used and may be removed in the future.
+
+  ```python
+  # DEPRECATED: This method will be replaced in the next release.
+  ```
+
+  🔹 **Warns about outdated functionality.**
+
+* **`# LEGACY:`** Old code that is still in use but may need reviewing.
+
+  ```python
+  # LEGACY: Keeping this function for backwards compatibility.
+  ```
+
+  🔹 **Identifies code that may need modernisation.**
 
 ---
 
-### 🚀 **Questões de Segurança e Performance**
-- **`# SECURITY:`** Código com implicações de segurança.  
-  ```python
-  # SECURITY: Sanitizar entrada do usuário para evitar injeção SQL.
-  ```
-  🔹 **Garante que vulnerabilidades sejam identificadas e corrigidas.**  
+### 🚀 **Security & Performance Concerns**
 
-- **`# PERFORMANCE:`** Código que pode ser otimizado para melhor desempenho.  
-  ```python
-  # PERFORMANCE: Reduzir chamadas de banco de dados desnecessárias.
-  ```
-  🔹 **Foca em tornar o código mais rápido e eficiente.**  
+* **`# SECURITY:`** Code with security implications.
 
-- **`# SCALABILITY:`** Código que pode apresentar problemas com aumento da carga.  
   ```python
-  # SCALABILITY: Este método pode não funcionar bem com milhões de registros.
+  # SECURITY: Sanitise user input to avoid SQL injection.
   ```
-  🔹 **Ajuda a planejar sistemas que precisam lidar com crescimento.**  
+
+  🔹 **Ensures that vulnerabilities are spotted and fixed.**
+
+* **`# PERFORMANCE:`** Code that could be optimised for better performance.
+
+  ```python
+  # PERFORMANCE: Reduce unnecessary database calls.
+  ```
+
+  🔹 **Focuses on making the code faster and more efficient.**
+
+* **`# SCALABILITY:`** Code that may not handle large-scale growth well.
+
+  ```python
+  # SCALABILITY: This method may fail with millions of records.
+  ```
+
+  🔹 **Helps plan for systems that need to support growth.**
 
 ---
 
-### 🔗 **Dependências e Compatibilidade**
-- **`# COMPATIBILITY:`** Questões de compatibilidade entre versões ou ambientes.  
-  ```python
-  # COMPATIBILITY: Verificar se esta API funciona no Python 3.8.
-  ```
-  🔹 **Garante que o código funcione corretamente em diferentes versões.**  
+### 🔗 **Dependencies & Compatibility**
 
-- **`# DEPENDENCY:`** Indica uma dependência importante do código.  
+* **`# COMPATIBILITY:`** Compatibility concerns between versions or environments.
+
   ```python
-  # DEPENDENCY: Requer a biblioteca requests para fazer chamadas HTTP.
+  # COMPATIBILITY: Check if this API works on Python 3.8.
   ```
-  🔹 **Ajuda a lembrar que bibliotecas externas são necessárias.**  
+
+  🔹 **Ensures the code works across different versions.**
+
+* **`# DEPENDENCY:`** Indicates an important dependency of the code.
+
+  ```python
+  # DEPENDENCY: Requires the requests library for HTTP calls.
+  ```
+
+  🔹 **Reminds you about required external libraries.**
 
 ---
 
-### 💡 **Sugestões e Dúvidas**
-- **`# NOTE:`** Informação importante sobre o código.  
-  ```python
-  # NOTE: Esta função usa um algoritmo recursivo.
-  ```
-  🔹 **Explica algo relevante para facilitar a compreensão.**  
+### 💡 **Suggestions & Questions**
 
-- **`# WARNING:`** Aviso sobre possíveis problemas.  
-  ```python
-  # WARNING: Este método pode gerar exceções se a entrada for inválida.
-  ```
-  🔹 **Ajuda a alertar sobre riscos no código.**  
+* **`# NOTE:`** Important information about the code.
 
-- **`# QUESTION:`** Dúvida ou ponto que precisa ser revisado.  
   ```python
-  # QUESTION: Será que esta abordagem é a mais eficiente?
+  # NOTE: This function uses a recursive algorithm.
   ```
-  🔹 **Levanta questões sobre o funcionamento do código.**  
 
-- **`# IDEA:`** Sugestão para melhoria futura.  
-  ```python
-  # IDEA: Criar uma versão assíncrona desta função.
-  ```
-  🔹 **Ajuda a manter um registro de possíveis inovações.**  
+  🔹 **Explains something relevant to aid understanding.**
 
-- **`# REVIEW:`** Código que precisa ser revisado antes de ser considerado final.  
-  ```python
-  # REVIEW: Conferir se os cálculos estão corretos.
-  ```
-  🔹 **Indica que um trecho do código precisa ser analisado novamente.**  
+* **`# WARNING:`** Warning about possible problems.
 
-- **`# WTF:`** Algo estranho ou inesperado no código.  
   ```python
-  # WTF: Esta variável muda de valor sem explicação aparente.
+  # WARNING: This method may raise exceptions if input is invalid.
   ```
-  🔹 **Usado para destacar trechos confusos ou suspeitos.**  
+
+  🔹 **Alerts about risks in the code.**
+
+* **`# QUESTION:`** A doubt or something that should be reviewed.
+
+  ```python
+  # QUESTION: Is this approach really the most efficient?
+  ```
+
+  🔹 **Raises questions about how the code works.**
+
+* **`# IDEA:`** A suggestion for future improvement.
+
+  ```python
+  # IDEA: Create an asynchronous version of this function.
+  ```
+
+  🔹 **Keeps track of potential enhancements.**
+
+* **`# REVIEW:`** Code that must be reviewed before being considered final.
+
+  ```python
+  # REVIEW: Double-check if the calculations are correct.
+  ```
+
+  🔹 **Marks code that requires further verification.**
+
+* **`# WTF:`** Something odd or unexpected in the code.
+
+  ```python
+  # WTF: This variable changes value without clear reason.
+  ```
+
+  🔹 **Highlights confusing or suspicious behaviour.**
