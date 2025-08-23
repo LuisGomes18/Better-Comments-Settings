@@ -2,18 +2,18 @@
     "better-comments.tags": [
         {
             "tag": "BUG",
-            "color": "#FF5555",
+            "color": "#FF3333",
             "strikethrough": false,
-            "underline": false,
+            "underline": true,
             "backgroundColor": "transparent",
             "bold": true,
             "italic": false
         },
         {
             "tag": "FIXME",
-            "color": "#FF4444",
+            "color": "#FF6600",
             "strikethrough": false,
-            "underline": false,
+            "underline": true,
             "backgroundColor": "transparent",
             "bold": true,
             "italic": false
@@ -21,60 +21,6 @@
         {
             "tag": "HACK",
             "color": "#FFCC00",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": true
-        },
-        {
-            "tag": "TODO",
-            "color": "#FFFF55",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": true,
-            "italic": false
-        },
-        {
-            "tag": "OPTIMIZE",
-            "color": "#50FA7B",
-            "strikethrough": false,
-            "underline": true,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "REFACTOR",
-            "color": "#33CC66",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": true,
-            "italic": false
-        },
-        {
-            "tag": "NOTE",
-            "color": "#57C7FF",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "WARNING",
-            "color": "#FFAA00",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": true,
-            "italic": false
-        },
-        {
-            "tag": "QUESTION",
-            "color": "#8BE9FD",
             "strikethrough": false,
             "underline": false,
             "backgroundColor": "transparent",
@@ -100,7 +46,34 @@
             "italic": false
         },
         {
-            "tag": "CLEANUP",
+            "tag": "TODO",
+            "color": "#FFFF55",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": true,
+            "italic": false
+        },
+        {
+            "tag": "OPTIMISE",
+            "color": "#33DD88",
+            "strikethrough": false,
+            "underline": true,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "REFACTOR",
+            "color": "#33CC66",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": true,
+            "italic": false
+        },
+        {
+            "tag": "CLEAN-UP",
             "color": "#BBBBBB",
             "strikethrough": true,
             "underline": false,
@@ -109,26 +82,8 @@
             "italic": false
         },
         {
-            "tag": "DEPRECATED",
-            "color": "#999999",
-            "strikethrough": true,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "LEGACY",
-            "color": "#CCCCCC",
-            "strikethrough": true,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": false,
-            "italic": false
-        },
-        {
-            "tag": "SECURITY",
-            "color": "#FF2222",
+            "tag": "REVIEW",
+            "color": "#44AAFF",
             "strikethrough": false,
             "underline": false,
             "backgroundColor": "transparent",
@@ -136,8 +91,17 @@
             "italic": false
         },
         {
+            "tag": "SECURITY",
+            "color": "#CC0000",
+            "strikethrough": false,
+            "underline": true,
+            "backgroundColor": "transparent",
+            "bold": true,
+            "italic": false
+        },
+        {
             "tag": "PERFORMANCE",
-            "color": "#33DD88",
+            "color": "#22BB66",
             "strikethrough": false,
             "underline": true,
             "backgroundColor": "transparent",
@@ -172,6 +136,51 @@
             "italic": false
         },
         {
+            "tag": "DEPRECATED",
+            "color": "#999999",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "LEGACY",
+            "color": "#CCCCCC",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "NOTE",
+            "color": "#57C7FF",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "WARNING",
+            "color": "#FFAA00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": true,
+            "italic": false
+        },
+        {
+            "tag": "QUESTION",
+            "color": "#8BE9FD",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": true
+        },
+        {
             "tag": "IDEA",
             "color": "#FFAA44",
             "strikethrough": false,
@@ -181,22 +190,13 @@
             "italic": false
         },
         {
-            "tag": "REVIEW",
-            "color": "#44AAFF",
-            "strikethrough": false,
-            "underline": false,
-            "backgroundColor": "transparent",
-            "bold": true,
-            "italic": false
-        },
-        {
             "tag": "WTF",
-            "color": "#FF7777",
+            "color": "#FF00AA",
             "strikethrough": true,
             "underline": false,
             "backgroundColor": "transparent",
             "bold": false,
             "italic": false
         }
-    ]   
+    ]
 }
